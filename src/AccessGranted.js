@@ -52,11 +52,10 @@ const AccessGranted = () => {
                     animation: "pulseText 1.5s infinite alternate"
                 }}
             >
-                WATCH OUT THIS SPACE FOR MORE ACTION
+                WATCH THIS SPACE FOR MORE ACTION
             </h1>
         </div>
     );
 };
 
 export default AccessGranted;
-    
