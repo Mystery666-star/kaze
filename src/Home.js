@@ -11,7 +11,7 @@ const Home = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 textAlign: "center",
-                padding: "20px", // Fix for mobile
+                padding: "5vw", // Responsive padding
                 boxSizing: "border-box",
             }}
         >
@@ -19,16 +19,16 @@ const Home = () => {
                 style={{
                     backgroundColor: "red",
                     borderRadius: "20px",
-                    padding: "10vw", // Responsive padding
-                    width: "90vw", // Adjusted for smaller screens
+                    padding: "5vw", // Adjusts for mobile
+                    width: "80vw", // Scales with screen size
                     maxWidth: "400px", // Prevents box from getting too big
                     boxShadow: "0px 4px 15px rgba(255, 0, 0, 0.5)",
                 }}
             >
                 <h1
                     style={{
-                        fontSize: "6vw", // Scales based on screen size
-                        maxWidth: "100%", // Prevents overflow
+                        fontSize: "min(8vw, 32px)", // Responsive text
+                        maxWidth: "100%",
                         wordBreak: "break-word",
                         marginBottom: "20px",
                     }}
@@ -36,7 +36,6 @@ const Home = () => {
                     Welcome to My Site!
                 </h1>
 
-                {/* Buttons */}
                 <div>
                     <button
                         style={{
@@ -45,7 +44,7 @@ const Home = () => {
                             margin: "10px",
                             borderRadius: "10px",
                             cursor: "pointer",
-                            fontSize: "1.2rem",
+                            fontSize: "min(6vw, 20px)", // Mobile-friendly text
                             fontWeight: "bold",
                             transition: "0.3s",
                             backgroundColor: "lightgreen",
@@ -62,7 +61,7 @@ const Home = () => {
                             margin: "10px",
                             borderRadius: "10px",
                             cursor: "pointer",
-                            fontSize: "1.2rem",
+                            fontSize: "min(6vw, 20px)",
                             fontWeight: "bold",
                             transition: "0.3s",
                             backgroundColor: "orange",
