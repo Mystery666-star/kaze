@@ -8,7 +8,16 @@ const Home = () => {
   return (
     <div className="container">
       <div className="box">
-        <h1>KAZÉ</h1>
+      <img
+    src="\logo.png"
+    alt="KAZÉ Logo"
+    style={{
+        width: "70%",  // Adjust the size
+        maxWidth: "200px",  // Prevent it from getting too large
+        marginBottom: "20px"
+    }}
+/>
+
         <p>Are you old enough to drink?</p>
         <button className="yes" onClick={() => navigate('/access-granted')}>Yes</button>
 <button className="no" onClick={() => navigate('/denied')}>
