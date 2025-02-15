@@ -11,7 +11,9 @@ const AccessGranted = () => {
                 width: "100vw",
                 backgroundColor: "black",
                 overflow: "hidden",
-                textAlign: "center"
+                textAlign: "center",
+                padding: "5vw",
+                boxSizing: "border-box",
             }}
         >
             <img
@@ -29,18 +31,16 @@ const AccessGranted = () => {
                 alt="Coming Soon"
                 style={{
                     position: "absolute",
-                    width: "50%",
-                    maxWidth: "250px",
+                    width: "min(50vw, 250px)", // Fully responsive
                     maxHeight: "25vh",
-                    top: "50%",
+                    top: "55%",
                     left: "50%",
                     transform: "translate(-50%, -50%)"
                 }}
             />
 
-<h1
+            <h1
                 style={{
-                    // Remove position: absolute
                     fontSize: "min(6vw, 24px)",
                     fontWeight: "bold",
                     color: "#ffcc00",
@@ -48,8 +48,7 @@ const AccessGranted = () => {
                     letterSpacing: "2px",
                     textAlign: "center",
                     width: "90%",
-                    margin: "20px auto 0", // Add top margin to separate from GIF
-                    whiteSpace: "normal",
+                    marginTop: "10vh",
                     animation: "pulseText 1.5s infinite alternate"
                 }}
             >
@@ -60,3 +59,4 @@ const AccessGranted = () => {
 };
 
 export default AccessGranted;
+    
