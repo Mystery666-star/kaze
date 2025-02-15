@@ -29,8 +29,7 @@ body {
 @media (max-width: 768px) {
     .box {
         transform: scale(1); /* Removes scaling on mobile */
-        height: 80vh;
-        width: 80vw; /* Takes full width */
+        width: 100vw; /* Takes full width */
     }
 
     .box h1, .box p {
