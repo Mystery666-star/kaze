@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .access-denied-container img {
+    width: 100%; /* Adjust size as needed */
+    max-width: 500px;
+  }
+  

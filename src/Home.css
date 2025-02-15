@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents unwanted scrollbars */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.box {
+    background-color: red;
+    border-radius: 20px;
+    padding: 36px;
+    text-align: center;
+    width: 90%; /* Adjusted for smaller screens */
+    max-width: 540px; /* Prevents it from being too large on big screens */
+    transform: scale(1.2); /* Adjust scale for better visibility */
+}
+
+/* Make text & buttons responsive */
+.box h1, .box p {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px;
+    font-size: 1.2rem;
+}
+
+/* Make buttons flexible for mo
