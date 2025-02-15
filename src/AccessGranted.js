@@ -14,36 +14,45 @@ const AccessGranted = () => {
                 textAlign: "center"
             }}
         >
-            {/* PNG Image */}
-            <img 
-                src="/Kaze.png" 
-                alt="Background" 
+            <img
+                src="/Kaze.png"
+                alt="Background"
                 style={{
-                    maxWidth: "80vw", // Ensures it scales properly
+                    maxWidth: "80vw",
                     maxHeight: "60vh",
                     objectFit: "contain"
-                }} 
+                }}
             />
 
-            {/* GIF Image Positioned Over PNG */}
-            <img 
-                src="/comingsoon.gif" 
-                alt="Coming Soon" 
+            <img
+                src="/comingsoon.gif"
+                alt="Coming Soon"
                 style={{
                     position: "absolute",
-                    width: "50%", // Adjusted for mobile
+                    width: "50%",
                     maxWidth: "250px",
                     maxHeight: "25vh",
-                    top: "50%", 
+                    top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)"
-                }} 
+                }}
             />
 
-            {/* Watch Out Text */}
-            <h1 
-            
-                
+            <h1
+                style={{
+                    position: "absolute",
+                    bottom: "20px", // Use a fixed pixel value for better control
+                    fontSize: "min(6vw, 24px)", // Use min() to cap the font size
+                    fontWeight: "bold",
+                    color: "#ffcc00",
+                    textShadow: "3px 3px 10px rgba(255, 255, 255, 0.8)",
+                    letterSpacing: "2px",
+                    textAlign: "center",
+                    width: "90%", // Keep the percentage width
+                    margin: "0 auto",
+                    whiteSpace: "normal",
+                    animation: "pulseText 1.5s infinite alternate"
+                }}
             >
                 WATCH OUT THIS SPACE FOR MORE ACTION
             </h1>
