@@ -43,9 +43,9 @@ const AccessGranted = () => {
             {/* Watch Out Text */}
             <h1 
                 style={{
-                    position: "absolute",
+                    position: "relative",
                     bottom: "5%", // Adjusted for better alignment on mobile
-                    fontSize: "1vw", // Dynamic font size
+                    fontSize: "4vw", // Dynamic font size
                     fontWeight: "bold",
                     color: "#ffcc00",
                     textShadow: "3px 3px 10px rgba(255, 255, 255, 0.8)",
