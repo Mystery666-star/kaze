@@ -51,7 +51,7 @@ const AccessGranted = () => {
                     textShadow: "3px 3px 10px rgba(255, 255, 255, 0.8)",
                     letterSpacing: "2px",
                     textAlign: "center",
-                    width: "90%",
+                    width: "60%",
                     whiteSpace: "normal", // Allows wrapping on small screens
                     margin: "0 auto", // Center the text
                     animation: "pulseText 1.5s infinite alternate"
