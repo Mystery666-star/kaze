@@ -5,37 +5,38 @@ const Home = () => {
                 backgroundColor: "black",
                 color: "white",
                 fontFamily: "sans-serif",
+                margin: "0",
                 height: "100vh",
-                width: "100vw",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 textAlign: "center",
-                padding: "5vw", // Responsive padding
-                boxSizing: "border-box",
+                overflow: "hidden", // Prevents scrolling
+                padding: "20px", // Prevents elements from getting cut off on smaller screens
             }}
         >
             <div
                 style={{
                     backgroundColor: "red",
                     borderRadius: "20px",
-                    padding: "5vw", // Adjusts for mobile
-                    width: "80vw", // Scales with screen size
-                    maxWidth: "400px", // Prevents box from getting too big
-                    boxShadow: "0px 4px 15px rgba(255, 0, 0, 0.5)",
+                    padding: "40px",
+                    width: "80vw", // Makes it responsive
+                    maxWidth: "350px", // Prevents it from getting too big
+                    transform: "translateY(-5%)",
+                    boxShadow: "0px 4px 15px rgba(255, 0, 0, 0.5)", // Nice shadow effect
                 }}
             >
                 <h1
                     style={{
-                        fontSize: "min(8vw, 32px)", // Responsive text
-                        maxWidth: "100%",
-                        wordBreak: "break-word",
+                        fontSize: "5vw", // Scales with screen size
+                        maxFontSize: "24px",
                         marginBottom: "20px",
                     }}
                 >
                     Welcome to My Site!
                 </h1>
 
+                {/* Buttons */}
                 <div>
                     <button
                         style={{
@@ -44,7 +45,7 @@ const Home = () => {
                             margin: "10px",
                             borderRadius: "10px",
                             cursor: "pointer",
-                            fontSize: "min(6vw, 20px)", // Mobile-friendly text
+                            fontSize: "1rem",
                             fontWeight: "bold",
                             transition: "0.3s",
                             backgroundColor: "lightgreen",
@@ -61,7 +62,7 @@ const Home = () => {
                             margin: "10px",
                             borderRadius: "10px",
                             cursor: "pointer",
-                            fontSize: "min(6vw, 20px)",
+                            fontSize: "1rem",
                             fontWeight: "bold",
                             transition: "0.3s",
                             backgroundColor: "orange",
