@@ -19,11 +19,29 @@ body {
 .box {
     background-color: red;
     border-radius: 20px;
-    padding: 36px;
+    padding: 5vw;
     text-align: center;
-    width: 540px;
-    transform: scale(1.8);
+    width: min(90vw, 540px); /* Responsive width */
+    max-width: 540px;
 }
+
+/* Adjust Scaling for Smaller Screens */
+@media (max-width: 768px) {
+    .box {
+        transform: scale(1); /* Removes scaling on mobile */
+        width: 90vw; /* Takes full width */
+    }
+
+    .box h1, .box p {
+        font-size: 1.5rem; /* Reduces font size */
+    }
+
+    button {
+        font-size: 1.2rem; /* Reduces button size */
+        padding: 12px 24px;
+    }
+}
+
 
 .box h1, .box p {
     font-size: 1.8rem;
