@@ -38,18 +38,17 @@ const AccessGranted = () => {
                 }}
             />
 
-            <h1
+<h1
                 style={{
-                    position: "absolute",
-                    bottom: "20px", // Use a fixed pixel value for better control
-                    fontSize: "min(6vw, 24px)", // Use min() to cap the font size
+                    // Remove position: absolute
+                    fontSize: "min(6vw, 24px)",
                     fontWeight: "bold",
                     color: "#ffcc00",
                     textShadow: "3px 3px 10px rgba(255, 255, 255, 0.8)",
                     letterSpacing: "2px",
                     textAlign: "center",
-                    width: "90%", // Keep the percentage width
-                    margin: "0 auto",
+                    width: "90%",
+                    margin: "20px auto 0", // Add top margin to separate from GIF
                     whiteSpace: "normal",
                     animation: "pulseText 1.5s infinite alternate"
                 }}
