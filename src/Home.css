@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    background-color: red;
+    border-radius: 20px;
+    padding: 36px;
+    text-align: center;
+    width: 540px;
+    transform: scale(1.8);
+}
+
+.box h1, .box p {
+    font-size: 1.8rem;
+}
+
+/* Button Base Style */
+button {
+    border: none;
+    padding: 18px 36px;
+    margin: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* YES Button Styling */
+.yes {
+    background: linear-gradient(to right, #4CAF50, #2E8B57); /* Smooth green gradient */
+    color: white;
+}
+
+.yes:hover {
+    background: linear-gradient(to right, #2E8B57, #4CAF50);
+    transform: scale(1.1); /* Slightly enlarges on hover */
+    box-shadow: 4px 4px 15px rgba(76, 175, 80, 0.6);
+}
+
+/* NO Button Styling */
+.no {
+    background: linear-gradient(to right, #FFA500, #FF6347); /* Orange to red gradient */
+    color: white;
+}
+
+.no:hover {
+    background: linear-gradient(to right, #FF6347, #FFA500);
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px rgba(255, 99, 71, 0.6);
+}
