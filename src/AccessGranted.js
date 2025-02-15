@@ -45,13 +45,13 @@ const AccessGranted = () => {
                 style={{
                     position: "absolute",
                     bottom: "5%", // Adjusted for better alignment on mobile
-                    fontSize: "4vw", // Dynamic font size
+                    fontSize: "1vw", // Dynamic font size
                     fontWeight: "bold",
                     color: "#ffcc00",
                     textShadow: "3px 3px 10px rgba(255, 255, 255, 0.8)",
                     letterSpacing: "2px",
                     textAlign: "center",
-                    width: "60%",
+                    width: "90%",
                     whiteSpace: "normal", // Allows wrapping on small screens
                     margin: "0 auto", // Center the text
                     animation: "pulseText 1.5s infinite alternate"
