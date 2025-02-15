@@ -7,40 +7,58 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents unwanted scrollbars */
+    text-align: center;
+    overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 100%;
-    padding: 20px;
-    text-align: center;
+    height: 100%;
+    padding: 20px; /* Prevents cutting off on smaller screens */
 }
 
 .box {
     background-color: red;
     border-radius: 20px;
-    padding: 36px;
+    padding: 40px; /* Increased padding for better spacing */
     text-align: center;
-    width: 90%; /* Adjusted for smaller screens */
-    max-width: 540px; /* Prevents it from being too large on big screens */
-    transform: scale(1.2); /* Adjust scale for better visibility */
+    width: 80vw; /* Makes it responsive */
+    max-width: 350px; /* Prevents it from becoming too big */
+    transform: translateY(-5%);
 }
 
 /* Make text & buttons responsive */
-.box h1, .box p {
-    font-size: 1.5rem; /* Adjust for smaller screens */
+.box h1 {
+    font-size: 5vw; /* Scales with screen size */
+    max-font-size: 24px;
 }
 
+/* Buttons */
 button {
-    width: 100%;
-    max-width: 300px;
-    padding: 14px;
-    font-size: 1.2rem;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* Make buttons flexible for mo
+.yes {
+    background-color: lightgreen;
+    box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.5);
+}
+
+.no {
+    background-color: orange;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
+}
+
+/* Hover Effects */
+button:hover {
+    transform: scale(1.1);
+}
